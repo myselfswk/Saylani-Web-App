@@ -1,0 +1,177 @@
+/*------------Body---------------------*/
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    /*display: flex;
+    justify-content: center;
+    min-height: 100vh;*/
+    background: #060c21;
+}
+/*Navigation Styling*/
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-brand img {
+    height: 80px;
+    width: 300px;
+    padding-left: 30px;
+}
+
+.navbar {
+    background-color: #F7F7F7;
+}
+
+.navbar-toggler {
+    border: none!important; /*because we're overriding bootstrap classes*/
+}
+
+/*----------Saylani Assignment text CSS*/
+.logo h2 {
+    font-family: cursive;
+    letter-spacing: 0.2em;
+    position: relative;
+    top: 0px;
+    left: 70px;
+    display: inline;
+}
+.logo h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #7C0000;
+    text-shadow: 2px 2px 5px orange;
+}
+.logo h2:hover {
+    transform: scale(1.2);
+    transition: 1s;
+    cursor: pointer;   /*make mouse shape like hand with one finger(like out sign in cricket)*/
+    color: orange;
+    text-shadow: 2px 2px 5px #6B5ACD;
+}
+.logo h2:not(:hover) {
+    transform: scale(1);  /*after cursor moves, text back to its original position*/
+    transition: 1s;
+}
+/*-------------------Box Skew------------------*/
+.boxCss {
+    position: relative;
+    height: 450px;
+    background: #060c21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+.boxCss::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    transform: skew(2deg, 2deg);
+    background: #fff;
+    z-index: -1;
+}
+/*Child Of Main Box*/
+.skew-one::before {
+    background: linear-gradient(315deg, #ff0057, #e64a19);
+}
+.skew-two::before {
+    background: linear-gradient(315deg, #89ff00, #00bcd4);
+}
+.skew-three::before {
+    background: linear-gradient(315deg, #e91e63, #5d02ff);
+}
+.skew-four::before {
+    background: linear-gradient(315deg, #ff0000, #ffc107);
+}
+.boxCss::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
+.contentCss {
+    position: relative;
+    padding: 20px;
+    transform: translateY(40px);
+}
+/*------------------Background Heading------------------*/
+.boxCss .contentCss h2 {
+    position: absolute;
+    top: -60px;
+    right: 20px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 10em;
+    color: rgba(255, 255, 255, .05);
+    transition: 0.5s;
+}
+.boxCss:hover .contentCss h2 {
+    top: -140px;
+}
+.boxCss .contentCss h3 {
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+/*-----------------for para of skew div------------------------*/
+.boxCss .contentCss p {
+    padding: 0px;
+    margin: 0px;
+    color: #fff;
+    font-size: 16px;
+}
+/*------------------Disappear Link means a tag-------------------*/
+.boxCss .contentCss a {
+    position: relative;
+    margin: 20px 0px 0px 0px;
+    padding: 10px 30px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    display: inline-block;
+    color: #fff;
+    transition: 0.5s;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+}
+/*-----------------------make link more attractive-------------------------*/
+.boxCss:hover .contentCss a {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+.boxCss .contentCss a:hover {
+    background: rgb(7, 28, 219);
+    color: #fff;
+}
+/*-----------------------Disabled Link----------------------*/
+.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+/*footer*/
+#footer {
+    /*position: fixed;*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    background-color: #333;
+    padding: 10px;
+}
+.fa-heart-o {
+    margin: 3px;
+    color: red;
+}
