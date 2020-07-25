@@ -1,0 +1,88 @@
+.mainDiv {
+    border: 2px solid black;
+    width: 30%;
+    position: relative;
+    left: 470px;
+    top: 20px;
+    border-radius: 50px;
+    box-shadow: -10px -10px lightgray;
+}
+.todo-H {
+    text-align: center;
+    /*    background-color: #240090;*/
+    position: relative;
+    top: 23px;
+    height: 50px;
+    /*border: 2px solid black;*/
+    /*box-shadow: -10px -10px lightgray;*/
+}
+.todo-div {
+    /*background-color: #3500D3;*/
+    text-align: center;
+    /*position: relative;
+    left: 470px;*/
+    height: 200px;
+    /*border: 2px solid black;*/
+}
+.todo-div input {
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+    border-radius: 100px;
+}
+.todo-div button {
+    padding: 10px;
+    margin: 10px;
+}
+.add-item {
+    background-color: green;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: large;
+}
+.add-item:hover {
+    background-color: white;
+    color: green;
+    font-size: large;
+}
+.all-R {
+    background-color: red;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: large;
+}
+.all-R:hover {
+    background-color: white;
+    color: red;
+    font-size: large;
+}
+.btn {
+    background-color: blueviolet;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 100px;
+    margin-top: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: white;
+    color: blueviolet;
+}
+.btnedit {
+    background-color: lawngreen;
+    padding: 10px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.btnedit:hover {
+    background-color: white;
+    color: lawngreen;
+}
+#list {
+    text-align: center;
+    list-style-type: none;
+    padding: 20px;
+    margin: 20px;
+    font-size: x-large;
+}
