@@ -17,3 +17,6 @@ http://versatile-stopwatch-waleed.surge.sh/
 
 # ToDo App Using JS
 http://todoapp-waleed.surge.sh/
+
+# Quiz App Using JS
+http://quizapp-waleed.surge.sh/
